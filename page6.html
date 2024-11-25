@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Other page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/page7.html" aria-current="page">Next Lesson</a>
+      <a href="page5.html">Previous Lesson</a>
+
+    </nav>
+    <main>
+      <h1>Lesson 5 : Tables </h1>
+      <h2> Tables
+        </h2>
+        <p> 
+            <strong>Tables</strong> allow web developers to arrange data into a grid-like structure.
+        </p>
+        <p>Aside from tables with grid borders, you can also create tables without borders, and position content without it looking like a grid.
+        </p>
+        <p>The essential elements for tables are:
+        </p>
+        <ul>
+            <li><strong>table</strong>: creates the table</li>
+            <li><strong>tr</strong>: creates a row</li>
+            <li><strong>th</strong>: creates a heading cell</li>
+            <li><strong>td</strong>: creates a data cell</li>
+        </ul>
+<p> Ex: </p>
+<p> <img src="tables.png" alt=""Examples of Tables in code"></p>
+
+<p> HTML Structure of a Table</p>
+<p> <img src="htmltable.png" alt=""Examples of HTML structured tables in code"></p>
+
+<h2> Table borders</h2>
+<p>In HTML5 we use CSS to create borders. If you want a table with borders, add the following code to the CSS section of your web page on Codepen:
+</p>
+
+<p> <strong> table, th, td {
+  border:1px solid black;
+} </strong> </p>
+          <h2> Table and Cell Sizes</h2>
+          <p>By default, a table will size itself to fit the contents of the cells within it. But you can force a table (or the cells within it) to have specific sizes. You can specify pixels (px) or percentage of the width/height of the page.
+          </p>
+
+          <p>If you want to control size, write following into the style section of your page in Codepen:
+          </p>
+          <p> <img src="tableandcellsizes.png" alt=""Examples of Table and Cell Sizes in code"></p>
+            
+          <h2>Colspan and Rowspan</h2>
+          <p>Sometimes you want a cell to break across more than one row or column (or both). In this case you use the rowspan or colspan attributes.
+          </p>
+
+          <p><strong> &lt;th colspan="2"&gt;
+            </strong></p>
+
+            <p><strong>&lt;td rowspan="2"&gt;</strong></td></p>
+
+          
+           
+          <p>Ex:</p>
+          <p> <img src="colandrowspan.png" alt="Example of Colspan and Rowspan in code"></p>
+
+
+          

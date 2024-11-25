@@ -10,36 +10,79 @@
   <body>
     <nav>
       <a href="/">Home</a>
-      <a href="/page2.html" aria-current="page">Next Lesson</a>
+      <a href="/page5.html" aria-current="page">Next Lesson</a>
+      <a href="page3.html">Previous Lesson</a>
+
     </nav>
     <main>
       <h1>Lesson 3 : Comments and Attributes </h1>
-      <h2> HTML
+      <h2> Comments
         </h2>
         <p> 
-          <strong> HTML </strong> stands for <strong> H </strong> yper <strong> T </strong> ext <strong> M </strong> arkup <strong> L </strong> anguage, the language that makes the World Wide Web possible. <p>HTML was invented by Tim Berners-Lee in 1989.
-          A markup language formats text, such that when displayed, the markups do not appear. In HTML, the markups are called tags, and are shown with the < and > symbols, which we call <strong> angle brackets. </strong> </p>
+            Comments are text hidden within an HTML document. In order to create an HTML comment, you must use the characters "<!--" before the comment text and "-->" after it.
+            
+            <p>Ex:</p>
+            <p> <img src="comments.png" alt="Example of Comments in code"></p>
 
-        <h2>Writing HTML code</h2>
-          <p>HTML code can be written in any Text editing program. </p> 
-            <p> <strong>Windows</strong>, you can edit HTML using the NotePad program. </p>
-            <p> On the <strong>Mac</strong>, you can edit HTML using the TextEdit program, configured for plain text editing. </p>
-            <p>For <strong> Chromebooks </strong>, there are not a lot of good options for text editors capable of creating HTML files. </p>
+         
            
-            <h2> Essential HTML elements </h2>
-            <p> A properly written web page should have the following elements:
-            </p>
+          <h2>Attributes</h2>
+          
+          <p> <strong>Attributes</strong>, are codes that appear within a tag that modify it in some way. The general syntax for an attribute is:
+          </p>
+           
+          &lt;tagName attributeName="value"> content</ tagName&gt;
+          
+          <p>Ex:</p>
+          <p> <img src="attributes.png" alt="Example of attributes in code"></p>
 
-            <p>The <strong>HTML5 doctype declaration.</strong>
-              <p></p>The <strong>html</strong> tag begins and ends the page.</p>
-             <p> The  <strong> head </strong> tag holds the page's metadata.</p>
-              <p>The <strong> title</strong> tag gives the words that show up on web browser tabs. </p>
-              <p>The <strong>body </strong> tag contains the visible content of the page. </p>
+          <h2>Links</h2>
+
+          <p>Links use the anchor or &lt;a&gt; element to make a hyperlink to another page or to another location on the same page. It is an inline element. To locate the link, you need the <strong>href</strong> attribute.
+          </p>
+
+<p>The general syntax for a link is</p>
+
+<p> <strong>&lt;a href="pathToFile"&gt;LinkText&lt;/a&gt;</strong> </p>
+
+
+       
+           <p> Ex: </p>
+       <p> <img src="links.png" alt = "Example of links in code" </p>
+
+            <h2>More link attributes</h2>
+            <p><strong>download:</strong> lets the user download a file
+              <p><strong>target:</strong> specifies a specific place within the page the link opens
               </p>
 
-              <p>Ex:</p>
-              <p> <img src="htmlintro.png" alt="Example of Essential HTML elements in code"></p>
+              <p> Some targets </p>
+              <ul>
+                <li><strong>_blank</strong>: Opens in a new window or tab.</li>
+                <li><strong>_top</strong>: Opens at the top of the page.</li>
+                <li><strong>_self</strong>: Opens within the same iframe.</li>
+                <li><strong>_parent</strong>: Opens within the parent of the current frame.</li>
+            </ul>
             
+            <p> <img src="morelinkattributes.png" alt = "Example of more link attributes in code" </p>
+              <h2>Embedding Images</h2>
+
+              <p>Images are embedded on a web page using the <strong> &lt;img&gt; </strong> element. It is an empty 
+                element (no trailing tag) and works inline. To locate the image,
+                 you must use the <strong>src</strong> attribute. You must also use the <strong>alt attribute</strong>
+                  to describe the image for screen readers or if the image will not load.</p>
+
+              <p>Ex:</p>
+              <p> <img src="embeddingimages.png" alt = "Example of embedding images in code" </p>
+<h2>Sizing elements</h2>
+<p>You can control the size of images by using either <strong>width </strong> or <strong> height </strong> attributes, or both. The actual dimensions are specified in pixels.
+  <p>If you only specify height or width, the image will scale proportionally. 
+  If you specify both, the image will fix itself to the dimensions you chose.</p>
+  </p>
+         <p> Ex:</p> 
+         
+         <p> <img src="sizingimages.png" alt = "Example of sizing images in code" </p>
+
+
     </main>
   </body>
 </html>
