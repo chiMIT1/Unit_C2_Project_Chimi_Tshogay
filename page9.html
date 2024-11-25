@@ -12,52 +12,36 @@
       <a href="/">Home</a>
       <a href="/page10.html" aria-current="page">Next Lesson</a>
       <a href="page8.html">Previous Lesson</a>
-
     </nav>
     <main>
-      <h1>Lesson 8 : Entities </h1>
-      <h2> Character Encoding Schemes
-        </h2>
+      <h1>Lesson 8: Entities</h1>
+      <h2>Character Encoding Schemes</h2>
+      <ul>
+        <li><strong>ASCII (American Standard Code for Information Interchange)</strong> - The first and most widely used character encoding system before Unicode.</li>
+        <li><strong>EBCDIC (Extended Binary Coded Decimal Interchange Code)</strong> - Used by IBM mainframe computers until IBM converted to ASCII in the 1980s.</li>
+        <li><strong>ANSI (American National Standards Institute) or Windows-1252</strong> - An extended version of ASCII developed by ANSI and used in Windows until Unicode.</li>
+        <li><strong>ISO-8859</strong> - Developed by the International Organization for Standardization, it was a variety of formats for different languages that existed before Unicode.</li>
+      </ul>
 
-        <ul>
-            <li><strong>ASCII (American Standard Code for Information Interchange)</strong>- The first and most widely used character encoding system before Unicode.
-            </li>
-            <li><strong>EBCDIC (Extended Binary Coded Decimal Interchange Code)</strong>- Used by IBM mainframe computers until IBM converted to ASCII in the 1980s.
-            </li>
-            <li><strong>ANSI (American National Standards Institute) or Windows-1252</strong>- An extended version of ASCII developed by ANSI and used in Windows until Unicode.
-            </li>
-            <li><strong>ISO-8859 </strong>- Developed by the International Organization for Standardization, it was a variety of formats for different languages that existed before Unicode.
-            </li>
-        </ul>
-        
-        <h2> Utilizing Unicode</h2>
+      <h2>Utilizing Unicode</h2>
+      <p>Unicode has several character sets. The most popular for web browsers is Unicode Text Format 8-bit, or <strong>UTF-8</strong>.</p>
+      <p>To ensure browser compatibility for your web page, you can use the following code in the head section of your page:</p>
+      <p><strong>&lt;meta charset="utf-8"&gt;</strong></p>
+      <p>Example:</p>
+      <p><img src="unicode.png" alt="Example of Unicode"></p>
 
-        <p>Unicode has several character sets. The most popular for web browsers is Unicode Text Format 8-bit, or <strong>UTF-8.</strong>
-        </p>
+      <h2>HTML Entities</h2>
+      <p>Several characters are reserved for use by HTML. Other characters are difficult to reproduce on the keyboard, or are things like emojis that can't be produced without special apps. To display these characters as text or emojis, you can use the following methods:</p>
 
-        <p>To force browser compatibility for your web page, you use the following code in the head section of your page:
-        </p>
-<p><strong>&lt;meta charset="utf-8"&gt;
-</strong></p>
-            <p>Ex:</p>
-            <p> <img src="unicode.png" alt="Example of Unicode"></p>
+      <p><strong>(Nickname method):</strong> & + nickname + ;  
+        Example: &lt; becomes &amp;lt;
+      </p>
+      <p><strong>(Number method):</strong> & + # + Unicode number + ;  
+        Example: &#60; becomes &amp;#60;
+      </p>
 
-            <h2>HTML Entities</h2>
-            <p>Several characters are considered reserved for use by HTML. Other characters are difficult to reproduce on the keyboard, or are things like emojis that can't be produced by the keyboard without a special app. To display these characters as text or emojis, you can write the following code:
-            </p>
-
-
-        <p>(nickname method): & + nickname + ;	
-            Example: &lt; becomes &amp;lt;</p>
-
-            <p>(number method): & + # + Unicode number + ;
-                Example: &#60; becomes &amp;#60;</p>
-
-            </p>
-         
-           
-          <h2>Essential Entities</h2>
-        
-          <p> <img src="essentialentities.png" alt="Example of Essential Entities in code"></p>
-
-          
+      <h2>Essential Entities</h2>
+      <p><img src="essentialentities.png" alt="Example of Essential Entities in code"></p>
+    </main>
+  </body>
+</html>
